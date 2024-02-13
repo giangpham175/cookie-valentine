@@ -1,17 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="main.css" rel="stylesheet">
-</head>
-<body>
-    
-<h1>Happy Valentines Day!</h1>
-<p id="clickHere">Yêu cookie nhứt !!! <br>nhấn chuột dữ dội vô nha. </p>
-<canvas id="c" width="500" height="500"></canvas>
+    <title>Cookie 14-2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <audio id="player" preload="auto">
+        <source src="https://audio.jukehost.co.uk/WPoLGNxhrdFTUkfQ3Y4hHrzK8xFY9TSr">
+        </source>
+        Your browser does not support the audio element.
+    </audio>
+    <div class="player_container hidden animated">
+        <button data-am-button="small" id="btn-mute"><i class="fa fa-volume-off"></i></button>
+        <button data-am-button="large" id="btn-play-pause"><i class="fa fa-play"></i></button>
+        <button data-am-button="small" id="btn-stop"><i class="fa fa-stop"></i></button>
+        <div id="progress-bar"><span id="progress"></span></div>
+    </div>
+    <div id="opening_screen" class="animated">
+        <h2 class="spinning">Valentines vui vẻ<br>
+            nhấn thử nhen</h2>
+
+    </div>
+    <!-- Lyrics -->
+
+    <section id="peace">
+
+        <!-- FIRST VERSE -->
+
+        <h2 id="spent24hour" class="lyrics animated hidden">Spent 24 hours <br>I need more hours with you</h2>
+        <h2 id="spenttheweekend" class="lyrics animated hidden">You spent the weekend <br>getting even, ooh</h2>
+        <h2 id="spentthelatenights" class="lyrics animated hidden">We spent the late nights <br>making things right
+            between us</h2>
+        <h2 id="allgoodbabe" class="lyrics animated hidden">But now it's all good, babe <br>Roll that back wood, babe
+            <br>And play me close</h2>
+        <h2 id="causegirlslike" class="lyrics animated hidden">'Cause girls like you <br>run 'round with guys like me
+        </h2>
+        <h2 id="tilsundown" class="lyrics animated hidden">'Til sun down when I come through <br>I need a girl like you,
+            yeah yeah</h2>
+        <h2 id="lovefunand" class="lyrics animated hidden">Girls like you love fun and, yeah <br>me too</h2>
+        <h2 id="whatiwant" class="lyrics animated hidden">What I want when I come through <br>I need a girl like you,
+            yeah yeah</h2>
+        <h2 id="ineedagirllikeyou" class="lyrics animated hidden">I need a girl like you</h2>
+
+        <h2 id="spentlastnight" class="lyrics animated hidden">I spent last night <br>on the last flight to you</h2>
+        <h2 id="dayup" class="lyrics animated hidden">Took a whole day up <br>trying to get way up, ooh</h2>
+        <h2 id="spentthelatenights1" class="lyrics animated hidden">We spent the late nights <br>trying to make things
+            right between us</h2>
+        <h2 id="allgoodbabe1" class="lyrics animated hidden">But now it's all good, babe <br>Roll that back wood, babe
+            <br>And play me close</h2>
+        <h2 id="causegirlslike1" class="lyrics animated hidden">'Cause girls like you <br>run 'round with guys like me
+        </h2>
+        <h2 id="tilsundown1" class="lyrics animated hidden">'Til sun down when I come through <br>I need a girl like
+            you, yeah yeah</h2>
+        <h2 id="lovefunand1" class="lyrics animated hidden">Girls like you love fun and, yeah <br>me too</h2>
+        <h2 id="whatiwant1" class="lyrics animated hidden">What I want when I come through <br>I need a girl like you,
+            yeah yeah</h2>
+        <h2 id="ineedagirllikeyou1" class="lyrics animated hidden">I need a girl like you</h2>
+
+        <h2 id="maybe" class="lyrics animated hidden">Maybe it's 6:45 <br>Maybe I'm barely alive</h2>
+        <h2 id="maybe1" class="lyrics animated hidden">Maybe you've taken my shit for the last time <br>yeah</h2>
+        <h2 id="maybe2" class="lyrics animated hidden">Maybe I know that I'm drunk <br>Maybe I know you're the one</h2>
+        <h2 id="maybe3" class="lyrics animated hidden">Maybe you thinking it's better if you drive</h2>
+
+        <h2 id="causegirlslike2" class="lyrics animated hidden">'Cause girls like you <br>run 'round with guys like me
+        </h2>
+        <h2 id="tilsundown2" class="lyrics animated hidden">'Til sun down when I come through <br>I need a girl like you
+        </h2>
+        <h2 id="lovefunand2" class="lyrics animated hidden">Girls like you love fun and, yeah <br>me too</h2>
+        <h2 id="whatiwant2" class="lyrics animated hidden">What I want when I come through <br>I need a girl like ...
+        </h2>
+        <h2 id="you" class="lyrics animated hidden">You</h2>
+
+        <h2 id="bemine" class="lyrics animated hidden">Happy Valentines Day <br>Yêu bé Cookie</h2>
+    </section>
+    <!-- partial -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="./script.js"></script>
+
 </body>
+
 </html>
